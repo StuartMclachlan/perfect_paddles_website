@@ -1,5 +1,3 @@
-/*Remember to add in CSS prefixs, plus retina screen line, meta info, etc.*/
-
 /*Fonts*/
 
 @font-face {
@@ -38,107 +36,39 @@
 }
 
 
-/*Main CSS*/
-
-
-/*Potential utility classes - pacifico, link styling, margins/padding, */
-
-
+/*Custom CSS*/
 
 body {
 	font-family: 'karlaregular', serif;
 	font-size: 16px;
+	line-height: 1.8;
 	color: #2d2d2d;
 	text-align: center;
-	line-height: 1.5;
+	margin: 0 auto;
 }
 
-section {
-	margin-top: 10px;
-	margin-bottom: 50px;
-}
-
-section p {
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #000000;
-	font-weight: bold;
-}
-
-nav li {
-	margin: 5px 15px;
-	display: inline;
-	text-transform: uppercase;
-}
-
-nav a {
-	text-decoration: none;
+a {
+	color: #2d2d2d;
 }
 
 a:hover {
 	color: #b64036;
-
 }
 
-a {
-	color: #ffffff;
-}
-
-header {
-	color: #ffffff;
-	background: linear-gradient(
-		rgba(0,0,0,0.3),
-		rgba(0,0,0,0.3)
-		),
-		url('../images/kayak-bkgd.jpg') fixed;
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-}
-
-header p {
-	font-size: 20px;
-	padding: 5px;
-	margin-top: 15px;
-	width: 100%;
-}
-
-h1, h2, h3 {
+h1, h2 {
 	font-family: 'pacificoregular', cursive;
 	line-height: 0.9;
+	font-size: 42px;
+	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 h1 {
-	font-size: 42px;
-	margin: 15px;
 	text-shadow: 1px 1px 1px #646464;
 }
 
 h2 {
-	font-size: 2rem;
-	margin-top: 30px;
-	margin-bottom: 35px;
-}
-
-footer {
-/*	height: 170px;*/
-	padding: 3%;
-	background-color: #252525;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-align: left;
-	color: #ffffff;
-}
-
-footer li {
-	margin: 10px;
+	color: #646464;
 }
 
 table {
@@ -147,7 +77,7 @@ table {
 
 th, td {
 	border: 1px solid #c8c8c8;
-	padding: 5px;
+	padding: 8px;
 }
 
 th {
@@ -159,14 +89,116 @@ td:hover {
 	background-color: #fbf6d9;
 }
 
+td:first-child {
+	text-align: left;
+}
+
+nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #000000;
+	font-weight: bold;
+	padding: 0% 2%;
+}
+
+nav li {
+	margin: 5px 15px;
+	display: inline;
+	text-transform: uppercase;
+}
+
+nav a, footer a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+header {
+	color: #ffffff;
+	background: -webkit-linear-gradient(
+		rgba(0,0,0,0.3),
+		rgba(0,0,0,0.3)
+		),
+		url('../images/kayak-bkgd.jpg') fixed center;
+	background: linear-gradient(
+		rgba(0,0,0,0.3),
+		rgba(0,0,0,0.3)
+		),
+		url('../images/kayak-bkgd.jpg') fixed center;
+	background-size: cover;
+	padding: 3%;
+	margin-bottom: 70px;
+	font-size: 18px;
+}
+
+header p {
+	padding: 5px;
+	margin-top: 6%;
+	width: 100%;
+}
+
+section p {
+	padding-bottom: 35px;
+}
+
+footer {
+	color: #ffffff;
+	padding: 3%;
+	background-color: #252525;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+footer li {
+	margin: 5px 15px 5px 0px;
+}
+
+i {
+	width: 20px;
+}
+
 .logo {
 	width: 220px;
 	margin: 10px;
 }
 
+.h1-first-line {
+	font-size: 24px;
+	font-family: 'karlaregular', serif
+}
+
+.h1-main {
+	font-size: 96px;
+}
+
 .overlay {
 	background-color: rgba(0,0,0,0.3);
-	max-width: 600px;
+	max-width: 85%;
+	margin: 0 auto;
+}
+
+.button {
+	height: 30px;
+	width: 120px;
+	border-radius: 20px;
+	background-color: #e2574c;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	margin-top: 35px;
+	padding: 10px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.6s ease 0.1s;
+	transition: all 0.6s ease 0.1s;
 }
 
 .button a {
@@ -176,44 +208,14 @@ td:hover {
 
 .button:hover {
 	background-color: #b64036;
-	transform: scale(1.2);
-}
-
-.button {
-	height: 30px;
-	width: 100px;
-	border-radius: 20px;
-	background-color: #e2574c;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	margin-top: 30px;
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-transform: uppercase;
-	transition: all 0.6s ease 0.1s;
-}
-
-.body-container {
-	max-width: 1140px;
-	margin: 0 auto;
-	padding: 1% 0% 2% 0%;
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
 }
 
 .about-container {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 0.5%;
-	padding: 0% 9.5% 3% 9.5%;
-}
-
-.photo-container {
-	display: flex;
-	justify-content: center;
-
+	width: 95%;
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .photo {
@@ -223,23 +225,15 @@ td:hover {
 	box-shadow: 3px 3px 3px #646464;
 }
 
-.text-left {
-	width: 45%;
-	text-align: left;
+.left-column, .price-table {
+	width: 98%;
+	margin: 1%;
 }
 
-.table {
-	width: 45%;
-}
-
-.flex-container {
+.two-column-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.map {
-	margin: 2%;
 }
 
 .address {
@@ -252,45 +246,103 @@ td:hover {
 }
 
 
+/*Utility classes*/
+
+.flex-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.padding-container {
+	max-width: 1140px;
+	padding: 0% 2% 3% 2%;
+	margin: 0 auto;
+}
+
 /*Media Queries*/
 
 @media all and (max-width: 600px) {
 
 	nav {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 	}
 
 	nav ul {
 		margin: 10px;
 	}
 
+		header {
+		font-size: 16px;
+	}
+
+	footer {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		padding-top: 30px;
+	}
+
+	footer p {
+		text-align: center;
+	}
+
+	footer li {
+		margin: 0px 0px;
+		display: inline;
+	}
+
+	footer ul {
+		margin: 15px;
+	}
+
+	.h1-main {
+		font-size: 54px;
+	}
+
+	.two-column-container {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
 	.photo-container {
-		flex-wrap: wrap;
-		flex-direction: column;
-		align-items: center;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 
 	.photo {
-	width: 96%;
-	height: 94%;
-	margin: 2% 3% 2% 3%;
+		width: 100%;
+		margin: 1%;
+	}
+
+	.social-links {
+		display: none;
 	}
 
 }
-
-@media all and (max-width: 1140px) {
-
-
-}
-
-
-
-
-
-
-
-
-
-
