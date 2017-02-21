@@ -132,7 +132,7 @@ header {
 		),
 		url('../images/kayak-bkgd.jpg') fixed center;
 	background-size: cover;
-	padding: 3%;
+	padding: 2%;
 	margin-bottom: 70px;
 	font-size: 18px;
 }
@@ -178,12 +178,12 @@ i {
 }
 
 .h1-main {
-	font-size: 96px;
+	font-size: 86px;
 }
 
 .overlay {
 	background-color: rgba(0,0,0,0.3);
-	max-width: 85%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
